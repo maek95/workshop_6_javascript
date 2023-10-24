@@ -1,0 +1,30 @@
+<!--
+
+In a new file, try to write a solution to the "FizzBuzz" question below (which is sometimes used in interviews, so good to know):
+
+Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
+
+-->
+
+
+<!-- multiples of 3 has a remainder of 0 when you divide with 3!! i.e. there are no decimals! -->
+<script>
+  number = 1;
+  
+  // note: the if/else arguments are the same as in the other file, but just written in another way because it was cleaner this way...
+  while (number <= 100) {
+    if ( (number % 5 == 0) && (number % 3 == 0)) {
+      console.log("FizzBuzz");
+    } else if (number % 3 == 0) {
+      console.log("Fizz");
+    } else if (number % 5 == 0) {
+      console.log("Buzz");
+    } else {
+      console.log(number);
+    }
+    number++;
+  }
+
+  
+
+</script>

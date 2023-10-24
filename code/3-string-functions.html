@@ -10,17 +10,26 @@
 
   // Task 1: Use console.log to print your name in uppercase
 
+  console.log("name: ", "marcus".toUpperCase());
+
+  let name = "marcus"; 
+  console.log("name: ", name.toUpperCase()); // same thing
 
   // Task 2: Find a function from the JavaScript string documentation (link below)
   //         to remove the whitespace around the string in the console.log() below.
   //
   // Documentation: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/prototype
-  console.log("    Remove whitespace   ")
+  console.log("    Remove whitespace   ".trim()) // removes whitespace AROUND
 
 
   // Task 3: Find a function in the documentation to count the number of characters in a
   //         string and update the console.log() below to print the number instead of the string:
-  console.log("How many characters long is this string?")
+  console.log("How many characters long is this string?".length) // 40 characters (including spaces)
+
+  let text = "How many characters long is this string?";
+  /* remove spaces between words... split is used to split a string (when a space occurs) into multiple sub-strings and return them in an array. join() is then used to join an array of strings... with no spaces between words... */
+  let newText = text.split(" ").join(""); 
+  console.log(newText.length) // 34 characters (removed spaces) 
 
 </script>
 
